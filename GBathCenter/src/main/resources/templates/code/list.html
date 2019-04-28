@@ -1,0 +1,67 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no  user-scalable=0">
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"
+	type="text/css">
+<link rel="shortcut icon" th:href="@{/favicon.ico}" />
+<script type="text/javascript" th:src="@{/js/jquery-3.4.0.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/bootstrap.bundle.js}"></script>
+<title>BATH CENTER</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-4" style="padding:15px;">
+				<div class="list-group" id="list-tab" role="tablist">
+					<a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-user" role="tab">用户</a> 
+					<a class="list-group-item list-group-item-action" data-toggle="list" href="#list-code" role="tab">代码</a>
+				</div>
+			</div>
+			<div class="col-8" style="padding:15px;padding-left:0px;">
+				<div class="tab-content" id="nav-tabContent">
+					<div class="tab-pane fade show active" id="list-user" role="tabpanel" aria-labelledby="list-user-list">
+						111111111111
+					</div>
+					<div class="tab-pane fade" id="list-code" role="tabpanel" aria-labelledby="list-code-list">
+						<table style="width=100%">
+							<tr>
+								<td>
+									<input id="searchType" type="hidden" value="phoneNumber" />
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<button id="showSearchType"
+												class="btn btn-outline-success dropdown-toggle" type="button"
+												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">名称</button>
+											<div class="dropdown-menu">
+												<a class="dropdown-item searchType" type="phoneNumber">名称</a> <a
+													class="dropdown-item searchType" type="name">代码</a>
+											</div>
+										</div>
+										<input id="searchValue" type="text"  placeholder=""
+											class="form-control border-success" aria-label="Search">
+										<div class="input-group-append">
+											<button type="button" id="doSearch" class="btn btn-outline-success">查询</button>
+										</div>
+									</div>
+								</td>
+								<td align="center">
+									<div style=" width: 80px;">
+										<span id="currentPage"></span> / <span id="pages"></span> [<span id="total"></span>]
+									</div>
+								</td>
+								<td>
+									<button id="newCustomerBtn" type="button" class="btn btn-primary">新代码</button>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

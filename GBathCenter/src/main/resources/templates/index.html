@@ -1,0 +1,46 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no  user-scalable=0">
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" type="text/css">
+<link rel="shortcut icon" th:href="@{/favicon.ico}" />
+<script type="text/javascript" th:src="@{/js/jquery-3.4.0.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/bootstrap.bundle.js}"></script>
+<base th:href="${#request.getContextPath()}+'/'">
+<title>BATH CENTER</title>
+</head>
+<body>
+	<nav style="background-color: #e3f2fd;" class="navbar navbar-expand-lg navbar-light ">
+		<h2>BATH CENTER</h2>
+	</nav>
+		<div class="container align-middle" style="padding-left:40px;padding-right:40px;">
+			<div style="height:70px;padding-top:10px;">
+				<div th:if="${errMsg}" th:utext="${errMsg}" class="alert alert-danger" role="alert">
+				</div>
+			</div>
+			<form action="user/login" method="post">
+				<div class="row">
+					<input id="username" name="username" type="text" class="form-control border-success shadow" aria-label="Search" placeholder="账号">
+				</div>
+				<div class="row" style="padding:5px;">
+				</div>
+				<div class="row">
+					<input id="password" name="password" type="password" class="form-control border-success shadow" aria-label="Search" placeholder="密码">
+				</div>
+				<div class="row" style="padding:5px;">
+				</div>
+				<div class="row">
+					<button type="submit" class="btn btn-primary btn-block mx-auto shadow">登 录</button>
+				</div>
+			</form>
+			<form action="register">
+				<div class="row" style="padding:5px;"></div>
+				<div class="row">
+					<button type="submit" class="btn btn-primary btn-block mx-auto shadow">注 册</button>
+				</div>
+			</form>
+		</div>
+	
+</body>
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+  
+<mapper namespace="com.g.bathcenter.mapper.CustomerMapper">  
+
+    <!-- insert user -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        insert into t_customer (id, name, phonenumber, gender, agerange, level, birthday, balance,regusername,reguserid,regdt, moddt)
+        values(#{id}, #{name}, #{phoneNumber}, #{gender}, #{agerange}, #{level},#{birthday}, #{balance}, #{regUsername}, #{regUserId},now()+0,now()+0)
+    </insert>
+    
+    <!-- update user -->
+    <update id="update">
+        update t_customer set 
+        name = #{name} ,
+        phonenumber = #{phoneNumber} ,
+        gender = #{gender} ,
+        agerange = #{agerange} ,
+        level = #{level} ,
+        birthday = #{birthday},
+        modusername = #{modUsername},
+        moduserid = #{modUserId},
+        balance = #{balance},
+        moddt = now()+0
+        where
+        id = #{id}
+    </update>
+    
+	<select id="find" resultType="com.g.bathcenter.bean.Customer">
+        select id, name, phoneNumber, balance, gender, agerange, level, birthday from t_customer 
+        <where>
+        	active = 1
+        	<if test="customer.phoneNumber != null ">
+	        	<bind name="patternPN" value="'%' + customer.phoneNumber + '%'" />
+	        	and phonenumber like #{patternPN}
+	        </if>
+	        <if test="customer.name != null">
+	        	<bind name="patternNM" value="'%' + customer.name + '%'" />
+	        	and name like #{patternNM}
+	        </if>
+        </where>
+        order by regdt desc
+	</select>
+    
+    <select id="findById" parameterType="int" resultType="com.g.bathcenter.bean.Customer">
+        select id, name, phoneNumber, balance, gender, agerange, level, birthday from t_customer where id=#{id}
+    </select>
+    
+    <!-- delete user -->
+    <delete id="delete">
+        delete from t_customer where id=#{id}
+    </delete>
+</mapper>

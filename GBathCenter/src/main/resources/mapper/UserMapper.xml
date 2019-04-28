@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+  
+<!-- 指定工作空间，要与接口名相同，源代码没有去看，猜测应该是通过"这里的namespace.下边方法的id"来定位方法的 -->  
+<mapper namespace="com.g.bathcenter.mapper.UserMapper">  
+
+    <!-- insert user -->
+    <insert id = "insert" parameterType="com.g.bathcenter.bean.User">
+        INSERT INTO USER(ID,USERNAME,PASSWORD,AGE) VALUES(#{id},#{username},#{password},#{age});
+    </insert>
+    
+    <!-- update user -->
+    <update id="update" parameterType="com.g.bathcenter.bean.User">
+        UPDATE USER SET USERNAME=#{username} , PASSWORD=#{password} , AGE = #{age} WHERE ID=#{id}
+    </update>
+    
+    <!-- find user -->
+    <select id="login" resultType="com.g.bathcenter.bean.User">
+        select id,name,age from t_user where username=#{username} and password = #{password}
+    </select>
+    
+    <select id="findByUsername" resultType="com.g.bathcenter.bean.User">
+        select id,name,age,sk from t_user where username=#{username}
+    </select>
+</mapper>

@@ -1,0 +1,39 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no  user-scalable=0">
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" type="text/css">
+<link rel="shortcut icon" th:href="@{/favicon.ico}" />
+<style type="text/css">
+td {
+	vertical-align: middle !important;
+}
+</style>
+<script type="text/javascript" th:src="@{/js/base.js}"></script>
+<script type="text/javascript" th:src="@{/js/date.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery-3.4.0.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/bootstrap.bundle.js}"></script>
+<script type="text/javascript" th:src="@{/js/table.js}"></script>
+<script type="text/javascript" th:src="@{/js/customer/historyRecharge.js}"></script>
+<title>BATH CENTER</title>
+</head>
+<body>
+	<input id="customerId" type="hidden" th:value="${customerId}">
+	<div class="row" style="margin:0;height:313px;">
+		<table id="table" class="table table-sm table-striped table-bordered table-hover" style="border-top:0px;">
+			<thead class="thead-light">
+				<tr>
+					<th scope="col" style="border-top:0px;">日期</th>
+					<th scope="col" style="border-top:0px;">金额</th>
+					<th scope="col" style="border-top:0px;">操作人</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+	<div class="row" style="margin:0;">
+		<nav id="pager" class="mx-auto" style="margin: 0 auto;"></nav>
+	</div>
+</body>
+</html>

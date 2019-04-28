@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.g.bathcenter.mapper.RechargeMapper">
+	<select id="find" resultType="com.g.bathcenter.bean.Recharge">
+		select id, customerid, customername, customerphonenumber, recharge, regusername, reguserid, regdt from t_recharge where customerid = #{customerId} order by regdt desc
+	</select>
+	<insert id="insert">
+		insert into g_batch_center.t_recharge 
+			( customerid, customername, customerphonenumber, recharge, regusername, reguserid, regdt)
+		values
+			( #{customerId}, #{customerName}, #{customerPhoneNumber}, #{recharge}, #{regUsername}, #{regUserId}, now()+0)
+	</insert>
+</mapper>
