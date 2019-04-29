@@ -8,59 +8,54 @@
 <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"
 	type="text/css">
 <link rel="shortcut icon" th:href="@{/favicon.ico}" />
+<script type="text/javascript" th:src="@{/js/base.js}"></script>
 <script type="text/javascript" th:src="@{/js/jquery-3.4.0.min.js}"></script>
 <script type="text/javascript" th:src="@{/js/bootstrap.bundle.js}"></script>
+<script type="text/javascript" th:src="@{/js/code/code.js}"></script>
 <title>BATH CENTER</title>
 </head>
 <body>
 	<div class="container-fluid">
+		<ul class="nav nav-tabs" id="myTab" role="tablist" style="border-bottom:0px;margin-top:2px;">
+			<li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" href="#home">代码</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#profile">用户</a>
+			</li>
+		</ul>
 		<div class="row">
-			<div class="col-4" style="padding:15px;">
-				<div class="list-group" id="list-tab" role="tablist">
-					<a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-user" role="tab">用户</a> 
-					<a class="list-group-item list-group-item-action" data-toggle="list" href="#list-code" role="tab">代码</a>
-				</div>
+			<div class="accordion">
+			  <div class="card">
+			    <div class="card-header" id="headingOne">
+			        <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="cursor:pointer">
+			          code1 <span class="badge badge-primary badge-pill">14</span>
+			        </div>
+			    </div>
+			    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+			      <div class="card-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			      </div>
+			    </div>
+			  </div>
+			 
+			 
+			  <div class="card">
+			    <div class="card-header" id="headingThree">
+			        <div class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="font-size:14px;cursor:pointer">
+			          code2 <span class="badge badge-primary badge-pill">12</span>
+			        </div>
+			    </div>
+			    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+			      <div class="card-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			      </div>
+			    </div>
+			  </div>
 			</div>
-			<div class="col-8" style="padding:15px;padding-left:0px;">
-				<div class="tab-content" id="nav-tabContent">
-					<div class="tab-pane fade show active" id="list-user" role="tabpanel" aria-labelledby="list-user-list">
-						111111111111
-					</div>
-					<div class="tab-pane fade" id="list-code" role="tabpanel" aria-labelledby="list-code-list">
-						<table style="width=100%">
-							<tr>
-								<td>
-									<input id="searchType" type="hidden" value="phoneNumber" />
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<button id="showSearchType"
-												class="btn btn-outline-success dropdown-toggle" type="button"
-												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">名称</button>
-											<div class="dropdown-menu">
-												<a class="dropdown-item searchType" type="phoneNumber">名称</a> <a
-													class="dropdown-item searchType" type="name">代码</a>
-											</div>
-										</div>
-										<input id="searchValue" type="text"  placeholder=""
-											class="form-control border-success" aria-label="Search">
-										<div class="input-group-append">
-											<button type="button" id="doSearch" class="btn btn-outline-success">查询</button>
-										</div>
-									</div>
-								</td>
-								<td align="center">
-									<div style=" width: 80px;">
-										<span id="currentPage"></span> / <span id="pages"></span> [<span id="total"></span>]
-									</div>
-								</td>
-								<td>
-									<button id="newCustomerBtn" type="button" class="btn btn-primary">新代码</button>
-								</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-			</div>
+		</div>
+		<div class="row">
+			
 		</div>
 	</div>
 </body>

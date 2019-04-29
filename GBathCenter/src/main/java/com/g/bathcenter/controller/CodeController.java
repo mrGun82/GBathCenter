@@ -23,11 +23,9 @@ public class CodeController {
 	@Autowired
 	InitializingData initializingData;
 	@RequestMapping("/find")
-	public PageInfo<Code> find(Code code) {
-		PageHelper.startPage(1, CommonBean.PAGE_SIZE);
+	public List<Code> find(Code code) {
 		List<Code> list = codeService.find(code);
-		PageInfo<Code> pageInfo = new PageInfo<>(list);
-		return pageInfo;
+		return list;
 	}
 
 	@RequestMapping("/findById")
