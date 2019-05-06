@@ -8,55 +8,48 @@
 <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}"
 	type="text/css">
 <link rel="shortcut icon" th:href="@{/favicon.ico}" />
+<script type="text/javascript" th:src="@{/js/base.js}"></script>
 <script type="text/javascript" th:src="@{/js/jquery-3.4.0.min.js}"></script>
 <script type="text/javascript" th:src="@{/js/bootstrap.bundle.js}"></script>
+<script type="text/javascript" th:src="@{/js/code/list.js}"></script>
 <title>BATH CENTER</title>
 </head>
 <body>
 	<div class="container-fluid">
-		<ul class="nav nav-tabs" id="myTab" role="tablist" style="border-bottom:0px;margin-top:2px;">
-			<li class="nav-item">
-				<a class="nav-link active" data-toggle="tab" href="#home">代码</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" data-toggle="tab" href="#profile">用户</a>
-			</li>
-		</ul>
 		<div class="row">
-			<div class="accordion" id="accordionExample">
-			  <div class="card">
-			    <div class="card-header" id="headingOne">
-			      <h2 class="mb-0">
-			        <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-size:14px;cursor:pointer">
-			          code1 <span class="badge badge-primary badge-pill">14</span>
-			        </div>
-			      </h2>
-			    </div>
-			    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-			      <div class="card-body">
-			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-			      </div>
-			    </div>
-			  </div>
-			 
-			  <div class="card">
-			    <div class="card-header" id="headingThree">
-			      <h2 class="mb-0">
-			        <div class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="font-size:14px;cursor:pointer">
-			          code2 <span class="badge badge-primary badge-pill">12</span>
-			        </div>
-			      </h2>
-			    </div>
-			    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-			      <div class="card-body">
-			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-			      </div>
-			    </div>
-			  </div>
-			</div>
+			<div class="accordion" id="codeAccordion" style='width: 100%'></div>
 		</div>
-		<div class="row">
-			
+		<div class="row"></div>
+	</div>
+
+
+	<div id="addCodeSetModal" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">新代码</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="newCodeForm">
+						<input type="hidden" id="codeId">
+						<div class="form-group">
+							<label for="name">名称</label> 
+							<input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="代码名称">
+						</div>
+						<div class="form-group">
+							<label for="value">值</label> 
+							<input type="text" class="form-control" id="value" placeholder="代码值">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button id="hideHistoryBtn" type="button" data-dismiss="modal" class="btn btn-secondary">关闭</button>
+					<button id="saveCodeSet" type="button" class="btn btn-primary">保存</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>

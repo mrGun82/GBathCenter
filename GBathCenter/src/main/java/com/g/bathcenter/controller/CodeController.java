@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.g.bathcenter.bean.Code;
+import com.g.bathcenter.bean.CodeSet;
 import com.g.bathcenter.bean.CommonBean;
 import com.g.bathcenter.bean.Customer;
 import com.g.bathcenter.controller.InitializingData.ContextDataType;
@@ -37,8 +38,16 @@ public class CodeController {
 	public void save(Code code) {
 		initializingData.resetContext(InitializingData.ContextDataType.APP_CODES);
 	}
-
-	@RequestMapping("/update")
-	public void update(Code code) {
+	@RequestMapping("/saveCodeSet")
+	public CodeSet saveCodeSet(CodeSet codeSet) {
+		codeService.saveCodeSet(codeSet);
+		initializingData.resetContext(InitializingData.ContextDataType.APP_CODES);
+		return codeSet;
+	}
+	
+	@RequestMapping("/removeCodeSet")
+	public void removeCodeSet(int id) {
+		codeService.removeCodeSet(id);
+		initializingData.resetContext(InitializingData.ContextDataType.APP_CODES);
 	}
 }

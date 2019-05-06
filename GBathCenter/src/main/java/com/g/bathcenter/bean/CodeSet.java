@@ -5,6 +5,7 @@ public class CodeSet {
 	private String codeId;
 	private String name;
 	private String value;
+	private int active;
 	
 	public int getId() {
 		return id;
@@ -29,6 +30,12 @@ public class CodeSet {
 	}
 	public void setValue(String value) {
 		this.value = value;
+	}
+	public int getActive() {
+		return active;
+	}
+	public void setActive(int active) {
+		this.active = active;
 	}
 	@Override
 	public String toString() {

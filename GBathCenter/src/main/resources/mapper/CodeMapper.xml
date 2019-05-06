@@ -18,6 +18,17 @@
         select c.id id,c.name name,c.value value, 
         cs.id sid, cs.codeid,cs.name sname,cs.value svalue 
         from t_code c 
-        left join t_codeset cs on cs.codeid = c.id
+        left join t_codeset cs on cs.codeid = c.id where cs.active=1
     </select>
+    <insert id="insertCodeSet" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+    	insert into t_codeset (codeid, name, value)values(#{codeId}, #{name}, #{value});
+    </insert>
+    <update id="updateCodeSet">
+    	update t_codeset set
+		<if test="name!=null">name = #{name} , </if>
+		<if test="value!=null">value =  #{value} , </if>
+		<if test="active!=null">active = #{active}</if>
+		where
+		id = #{id} ;
+    </update>
 </mapper>

@@ -28,15 +28,12 @@ public class InitializingData implements InitializingBean {
 	}
 
 	public void resetContext(ContextDataType cdt) {
-		Object ac = servletContext.getAttribute(cdt.getName());
-		if (ac == null) {
-			switch (cdt) {
-			case APP_CODES:
-				resetAppCodes();
-				break;
-			default:
-				break;
-			}
+		switch (cdt) {
+		case APP_CODES:
+			resetAppCodes();
+			break;
+		default:
+			break;
 		}
 	}
 

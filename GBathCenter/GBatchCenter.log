@@ -10861,3 +10861,540 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 12:23:55.050 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
 12:23:55.054 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
 12:23:55.157 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+13:46:30.061 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 11588 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+13:46:30.074 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+13:46:30.171 INFO  springframework.boot.logging.DeferredLog.logTo()/227 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13:46:30.171 INFO  springframework.boot.logging.DeferredLog.logTo()/227 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13:46:31.653 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+13:46:31.667 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+13:46:31.676 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+13:46:31.677 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+13:46:32.042 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13:46:32.050 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+13:46:32.050 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 1878 ms
+13:46:32.459 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+13:46:33.207 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+13:46:33.577 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+13:46:33.741 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+13:46:33.958 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+13:46:33.994 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+13:46:34.028 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+13:46:34.032 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 4.906 seconds (JVM running for 6.668)
+13:46:45.766 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:46:45.766 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/524 - Initializing Servlet 'dispatcherServlet'
+13:46:45.775 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/546 - Completed initialization in 9 ms
+15:49:51.622 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+15:49:51.623 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
+15:49:51.627 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+15:49:51.981 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 11588 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+15:49:51.982 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+15:49:52.537 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+15:49:52.538 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+15:49:52.539 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+15:49:52.539 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+15:49:52.630 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+15:49:52.633 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+15:49:52.633 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 647 ms
+15:49:52.724 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-2 - Starting...
+15:49:54.296 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-2 - Start completed.
+15:49:54.470 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+15:49:54.529 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+15:49:54.639 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+15:49:54.667 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+15:49:54.675 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+15:49:54.676 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 2.799 seconds (JVM running for 7407.215)
+15:49:54.679 INFO  springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent()/70 - Condition evaluation unchanged
+15:49:55.376 INFO  springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown()/163 - Application shutdown requested.
+15:49:55.378 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+15:49:55.379 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-2 - Shutdown initiated...
+15:49:56.087 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-2 - Shutdown completed.
+16:06:49.325 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 14156 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:06:49.343 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:06:49.403 INFO  springframework.boot.logging.DeferredLog.logTo()/227 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:06:49.403 INFO  springframework.boot.logging.DeferredLog.logTo()/227 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:06:50.860 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:06:50.875 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:06:50.884 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:06:50.885 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:06:51.162 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:06:51.168 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:06:51.169 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 1766 ms
+16:06:51.513 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+16:06:52.179 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+16:06:52.630 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:06:52.889 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:06:53.111 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:06:53.144 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:06:53.180 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:06:53.183 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 4.418 seconds (JVM running for 5.514)
+16:06:57.155 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:06:57.155 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/524 - Initializing Servlet 'dispatcherServlet'
+16:06:57.162 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/546 - Completed initialization in 7 ms
+16:09:21.611 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:09:21.612 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
+16:09:21.617 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+16:09:21.951 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 14156 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:09:21.952 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:09:22.424 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:09:22.425 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:09:22.426 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:09:22.426 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:09:22.506 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:09:22.510 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:09:22.510 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 555 ms
+16:09:22.603 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-2 - Starting...
+16:09:23.155 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-2 - Start completed.
+16:09:23.315 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:09:23.367 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:09:23.443 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:09:23.470 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:09:23.478 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:09:23.479 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 1.625 seconds (JVM running for 155.808)
+16:09:23.483 INFO  springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent()/70 - Condition evaluation unchanged
+16:09:25.711 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:09:25.711 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/524 - Initializing Servlet 'dispatcherServlet'
+16:09:25.714 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/546 - Completed initialization in 3 ms
+16:12:54.465 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:12:54.466 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-2 - Shutdown initiated...
+16:12:54.470 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-2 - Shutdown completed.
+16:12:54.997 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 14156 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:12:54.997 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:12:55.491 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:12:55.492 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:12:55.492 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:12:55.493 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:12:55.562 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:12:55.565 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:12:55.566 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 566 ms
+16:12:55.653 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-3 - Starting...
+16:12:56.182 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-3 - Start completed.
+16:12:56.321 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:12:56.373 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:12:56.443 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:12:56.465 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:12:56.472 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:12:56.472 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 1.588 seconds (JVM running for 368.799)
+16:12:56.474 INFO  springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent()/70 - Condition evaluation unchanged
+16:13:40.741 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:13:40.742 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-3 - Shutdown initiated...
+16:13:40.751 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-3 - Shutdown completed.
+16:13:41.192 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 14156 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:13:41.193 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:13:41.736 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:13:41.737 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:13:41.737 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:13:41.738 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:13:41.799 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:13:41.802 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:13:41.802 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 605 ms
+16:13:41.888 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-4 - Starting...
+16:13:42.399 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-4 - Start completed.
+16:13:42.556 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:13:42.607 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:13:42.685 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:13:42.706 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:13:42.712 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:13:42.713 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 1.634 seconds (JVM running for 415.038)
+16:13:42.715 INFO  springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent()/70 - Condition evaluation unchanged
+16:13:45.152 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:13:45.153 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-4 - Shutdown initiated...
+16:13:47.241 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-4 - Shutdown completed.
+16:13:47.529 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 14156 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:13:47.530 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:13:48.041 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:13:48.042 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:13:48.042 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:13:48.042 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:13:48.101 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:13:48.104 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:13:48.104 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 571 ms
+16:13:48.180 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-5 - Starting...
+16:13:53.861 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-5 - Start completed.
+16:13:54.042 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:13:54.091 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:13:54.166 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:13:54.188 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:13:54.195 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:13:54.196 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 6.75 seconds (JVM running for 426.521)
+16:13:54.198 INFO  springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent()/70 - Condition evaluation unchanged
+16:15:03.047 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:15:03.047 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-5 - Shutdown initiated...
+16:15:03.056 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-5 - Shutdown completed.
+16:15:03.337 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 14156 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:15:03.337 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:15:03.793 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:15:03.794 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:15:03.794 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:15:03.794 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:15:03.856 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:15:03.859 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:15:03.859 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 518 ms
+16:15:03.938 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-6 - Starting...
+16:15:04.449 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-6 - Start completed.
+16:15:04.648 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:15:04.713 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:15:04.808 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:15:04.836 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:15:04.846 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:15:04.847 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 1.592 seconds (JVM running for 497.171)
+16:15:04.851 INFO  springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent()/70 - Condition evaluation unchanged
+16:16:22.802 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:16:22.802 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-6 - Shutdown initiated...
+16:16:22.807 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-6 - Shutdown completed.
+16:16:23.196 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 14156 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:16:23.196 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:16:23.751 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:16:23.752 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:16:23.752 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:16:23.752 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:16:23.810 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:16:23.813 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:16:23.813 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 611 ms
+16:16:23.887 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-7 - Starting...
+16:19:35.351 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 14684 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:19:35.357 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:19:35.401 INFO  springframework.boot.logging.DeferredLog.logTo()/227 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:19:35.401 INFO  springframework.boot.logging.DeferredLog.logTo()/227 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:19:36.776 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:19:36.791 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:19:36.800 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:19:36.801 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:19:37.094 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:19:37.101 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:19:37.101 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 1700 ms
+16:19:37.434 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+16:19:38.024 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+16:19:38.386 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:19:38.560 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:19:38.771 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:19:38.805 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:19:38.842 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:19:38.847 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 3.975 seconds (JVM running for 5.07)
+16:19:43.277 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:19:43.278 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
+16:19:43.282 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+16:19:43.603 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 14684 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:19:43.603 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:19:44.073 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:19:44.074 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:19:44.075 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:19:44.075 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:19:44.152 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:19:44.155 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:19:44.155 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 547 ms
+16:19:44.241 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-2 - Starting...
+16:19:44.762 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-2 - Start completed.
+16:19:44.922 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:19:44.979 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:19:45.068 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:19:45.106 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:19:45.119 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:19:45.120 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 1.614 seconds (JVM running for 11.342)
+16:19:45.123 INFO  springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent()/70 - Condition evaluation unchanged
+16:19:55.749 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:19:55.749 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/524 - Initializing Servlet 'dispatcherServlet'
+16:19:55.756 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/546 - Completed initialization in 7 ms
+16:20:52.913 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:20:52.914 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-2 - Shutdown initiated...
+16:20:52.918 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-2 - Shutdown completed.
+16:20:53.394 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 14684 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:20:53.395 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:20:53.874 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:20:53.875 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:20:53.875 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:20:53.876 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:20:53.945 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:20:53.948 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:20:53.949 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 550 ms
+16:20:54.036 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-3 - Starting...
+16:20:54.723 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-3 - Start completed.
+16:20:54.900 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:20:54.956 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:20:55.032 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:20:55.053 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:20:55.061 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:20:55.062 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 1.766 seconds (JVM running for 81.284)
+16:20:55.065 INFO  springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent()/70 - Condition evaluation unchanged
+16:20:59.978 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 13860 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:20:59.985 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:21:00.032 INFO  springframework.boot.logging.DeferredLog.logTo()/227 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:21:00.032 INFO  springframework.boot.logging.DeferredLog.logTo()/227 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:21:01.524 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:21:01.540 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:21:01.550 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:21:01.551 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:21:01.885 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:21:01.892 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:21:01.892 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 1860 ms
+16:21:02.224 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+16:21:03.028 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+16:21:03.390 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:21:03.551 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:21:03.763 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:21:03.798 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:21:03.833 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:21:03.837 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 4.343 seconds (JVM running for 5.597)
+16:21:11.153 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:21:11.154 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/524 - Initializing Servlet 'dispatcherServlet'
+16:21:11.163 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/546 - Completed initialization in 9 ms
+16:29:35.120 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:29:35.121 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
+16:29:35.131 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+16:29:35.489 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 13860 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:29:35.489 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:29:35.977 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:29:35.977 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:29:35.978 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:29:35.978 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:29:36.051 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:29:36.054 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:29:36.054 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 560 ms
+16:29:36.157 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-2 - Starting...
+16:29:37.154 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-2 - Start completed.
+16:29:37.313 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:29:37.364 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:29:37.438 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:29:37.463 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:29:37.471 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:29:37.472 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 2.08 seconds (JVM running for 519.225)
+16:29:37.476 INFO  springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent()/70 - Condition evaluation unchanged
+16:29:45.859 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:29:45.860 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/524 - Initializing Servlet 'dispatcherServlet'
+16:29:45.863 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/546 - Completed initialization in 3 ms
+16:38:49.252 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:38:49.253 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-2 - Shutdown initiated...
+16:38:49.258 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-2 - Shutdown completed.
+16:38:49.646 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 13860 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:38:49.647 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:38:50.180 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:38:50.181 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:38:50.181 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:38:50.182 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:38:50.253 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:38:50.256 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:38:50.256 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 605 ms
+16:38:50.337 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-3 - Starting...
+16:38:50.983 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-3 - Start completed.
+16:38:51.127 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:38:51.177 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:38:51.242 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:38:51.261 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:38:51.268 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:38:51.268 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 1.711 seconds (JVM running for 1073.014)
+16:38:51.270 INFO  springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent()/70 - Condition evaluation unchanged
+16:38:55.770 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:38:55.771 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-3 - Shutdown initiated...
+16:38:56.227 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-3 - Shutdown completed.
+16:38:56.566 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 13860 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:38:56.566 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:38:57.027 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:38:57.028 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:38:57.028 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:38:57.029 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:38:57.096 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:38:57.099 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:38:57.099 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 528 ms
+16:38:57.183 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-4 - Starting...
+16:38:57.778 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-4 - Start completed.
+16:38:57.933 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:38:57.990 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:38:58.057 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:38:58.080 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:38:58.088 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:38:58.089 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 1.606 seconds (JVM running for 1079.834)
+16:38:58.092 INFO  springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent()/70 - Condition evaluation unchanged
+16:39:02.615 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:39:02.615 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/524 - Initializing Servlet 'dispatcherServlet'
+16:39:02.618 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/546 - Completed initialization in 3 ms
+16:40:33.587 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:40:33.588 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-4 - Shutdown initiated...
+16:40:33.592 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-4 - Shutdown completed.
+16:40:33.943 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 13860 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:40:33.943 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:40:34.408 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:40:34.409 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:40:34.410 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:40:34.410 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:40:34.471 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:40:34.474 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:40:34.474 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 526 ms
+16:40:39.970 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-5 - Starting...
+16:40:40.992 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-5 - Start completed.
+16:40:41.137 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:40:41.183 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:40:41.250 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:40:41.271 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:40:41.277 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:40:41.278 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 7.428 seconds (JVM running for 1183.022)
+16:40:41.280 INFO  springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent()/70 - Condition evaluation unchanged
+16:41:01.096 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:41:01.097 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-5 - Shutdown initiated...
+16:41:01.103 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-5 - Shutdown completed.
+16:41:01.407 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 13860 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:41:01.407 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:41:01.880 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:41:01.880 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:41:01.881 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:41:01.881 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:41:01.945 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:41:01.948 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:41:01.949 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 536 ms
+16:41:02.046 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-6 - Starting...
+16:41:02.643 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-6 - Start completed.
+16:41:02.780 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:41:02.833 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:41:02.901 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:41:02.923 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:41:02.930 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:41:02.931 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 1.609 seconds (JVM running for 1204.674)
+16:41:02.933 INFO  springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent()/70 - Condition evaluation unchanged
+16:41:02.996 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:41:02.996 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/524 - Initializing Servlet 'dispatcherServlet'
+16:41:03.000 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/546 - Completed initialization in 4 ms
+16:45:27.910 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:45:27.911 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-6 - Shutdown initiated...
+16:45:27.978 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-6 - Shutdown completed.
+16:45:28.691 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 13860 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:45:28.691 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:45:29.296 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:45:29.297 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:45:29.298 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:45:29.298 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:45:29.368 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:45:29.371 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:45:29.372 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 677 ms
+16:45:29.455 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-7 - Starting...
+16:45:29.872 INFO  springframework.test.context.support.AbstractTestContextBootstrapper.buildDefaultMergedContextConfiguration()/308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.g.bathcenter.GBathCenterApplicationTests], using SpringBootContextLoader
+16:45:29.881 INFO  springframework.test.context.support.AbstractContextLoader.generateDefaultLocations()/264 - Could not detect default resource locations for test class [com.g.bathcenter.GBathCenterApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:45:29.883 INFO  springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses()/83 - Could not detect default configuration classes for test class [com.g.bathcenter.GBathCenterApplicationTests]: GBathCenterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:45:29.988 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-7 - Start completed.
+16:45:29.997 INFO  springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses()/247 - Found @SpringBootConfiguration com.g.bathcenter.GBathCenterApplication for test class com.g.bathcenter.GBathCenterApplicationTests
+16:45:30.091 INFO  springframework.test.context.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames()/248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+16:45:30.111 INFO  springframework.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners()/177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@125290e5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6fa34d52, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@57576994, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@616ac46a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@67b9b51a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1205bd62, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ef27d7f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@490caf5f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6337c201, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5c669da8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@31920ade, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1d483de4]
+16:45:30.122 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:45:30.203 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:45:30.291 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:45:30.318 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:45:30.327 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:45:30.327 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 1.744 seconds (JVM running for 1472.068)
+16:45:30.330 INFO  springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent()/70 - Condition evaluation unchanged
+16:45:30.823 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplicationTests on G-PC with PID 15148 (started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:45:30.824 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:45:32.667 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+16:45:33.327 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+16:45:34.256 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:45:34.667 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:45:35.205 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplicationTests in 5.039 seconds (JVM running for 6.498)
+16:45:35.514 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:45:35.518 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
+16:45:35.756 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+16:45:43.268 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:45:43.269 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-7 - Shutdown initiated...
+16:45:43.274 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-7 - Shutdown completed.
+16:45:43.596 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 13860 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:45:43.597 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:45:44.062 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:45:44.063 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:45:44.064 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:45:44.064 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:45:44.126 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:45:44.129 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:45:44.129 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 528 ms
+16:45:44.213 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-8 - Starting...
+16:45:44.752 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-8 - Start completed.
+16:45:44.887 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:45:44.945 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:45:45.016 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:45:45.037 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:45:45.043 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:45:45.044 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 1.53 seconds (JVM running for 1486.785)
+16:45:45.047 INFO  springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener.onApplicationEvent()/70 - Condition evaluation unchanged
+16:45:49.597 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 13000 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:45:49.603 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:45:49.649 INFO  springframework.boot.logging.DeferredLog.logTo()/227 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:45:49.649 INFO  springframework.boot.logging.DeferredLog.logTo()/227 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:45:51.100 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:45:51.114 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:45:51.123 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:45:51.124 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:45:51.399 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:45:51.406 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:45:51.406 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 1756 ms
+16:45:51.730 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+16:45:52.375 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+16:45:52.694 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:45:52.855 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:45:53.069 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:45:53.106 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:45:53.144 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:45:53.148 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 4.044 seconds (JVM running for 5.235)
+16:53:39.063 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:53:39.063 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/524 - Initializing Servlet 'dispatcherServlet'
+16:53:39.070 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/546 - Completed initialization in 7 ms
+16:56:30.434 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+16:56:30.435 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
+16:56:30.439 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+16:56:34.364 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 14484 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+16:56:34.371 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+16:56:34.413 INFO  springframework.boot.logging.DeferredLog.logTo()/227 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:56:34.414 INFO  springframework.boot.logging.DeferredLog.logTo()/227 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:56:35.953 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+16:56:35.970 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+16:56:35.978 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+16:56:35.979 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+16:56:36.260 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16:56:36.267 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+16:56:36.267 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 1853 ms
+16:56:36.621 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+16:56:37.252 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+16:56:37.565 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+16:56:37.734 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+16:56:37.962 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+16:56:38.018 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+16:56:38.082 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+16:56:38.086 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 4.271 seconds (JVM running for 5.577)
+16:56:39.294 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:56:39.294 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/524 - Initializing Servlet 'dispatcherServlet'
+16:56:39.304 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/546 - Completed initialization in 9 ms
+17:21:42.622 INFO  springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown()/163 - Application shutdown requested.
+17:21:42.626 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+17:21:42.627 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
+17:21:42.634 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+17:21:54.345 INFO  springframework.test.context.support.AbstractTestContextBootstrapper.buildDefaultMergedContextConfiguration()/308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.g.bathcenter.GBathCenterApplicationTests], using SpringBootContextLoader
+17:21:54.355 INFO  springframework.test.context.support.AbstractContextLoader.generateDefaultLocations()/264 - Could not detect default resource locations for test class [com.g.bathcenter.GBathCenterApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:21:54.356 INFO  springframework.test.context.support.AnnotationConfigContextLoaderUtils.detectDefaultConfigurationClasses()/83 - Could not detect default configuration classes for test class [com.g.bathcenter.GBathCenterApplicationTests]: GBathCenterApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:21:54.459 INFO  springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses()/247 - Found @SpringBootConfiguration com.g.bathcenter.GBathCenterApplication for test class com.g.bathcenter.GBathCenterApplicationTests
+17:21:54.553 INFO  springframework.test.context.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames()/248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+17:21:54.572 INFO  springframework.test.context.support.AbstractTestContextBootstrapper.getTestExecutionListeners()/177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@125290e5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6fa34d52, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@57576994, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@616ac46a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@67b9b51a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1205bd62, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ef27d7f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@490caf5f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6337c201, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5c669da8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@31920ade, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1d483de4]
+17:21:55.270 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplicationTests on G-PC with PID 14860 (started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+17:21:55.271 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+17:21:57.147 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+17:21:57.734 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+17:21:58.588 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+17:21:59.128 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+17:21:59.923 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplicationTests in 5.31 seconds (JVM running for 6.852)
+17:22:00.210 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown()/208 - Shutting down ExecutorService 'applicationTaskExecutor'
+17:22:00.213 INFO  zaxxer.hikari.HikariDataSource.close()/350 - HikariPool-1 - Shutdown initiated...
+17:22:01.055 INFO  zaxxer.hikari.HikariDataSource.close()/352 - HikariPool-1 - Shutdown completed.
+17:31:33.957 INFO  springframework.boot.StartupInfoLogger.logStarting()/50 - Starting GBathCenterApplication on G-PC with PID 10560 (D:\git\repository-GBathCenter\GBathCenter\target\classes started by Administrator in D:\git\repository-GBathCenter\GBathCenter)
+17:31:33.965 INFO  springframework.boot.SpringApplication.logStartupProfileInfo()/675 - No active profile set, falling back to default profiles: default
+17:31:34.013 INFO  springframework.boot.logging.DeferredLog.logTo()/227 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:31:34.014 INFO  springframework.boot.logging.DeferredLog.logTo()/227 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:31:35.458 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize()/90 - Tomcat initialized with port(s): 80 (http)
+17:31:35.473 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing ProtocolHandler ["http-nio-80"]
+17:31:35.483 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting service [Tomcat]
+17:31:35.484 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting Servlet engine: [Apache Tomcat/9.0.17]
+17:31:35.776 INFO  apache.juli.logging.DirectJDKLog.log()/173 - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:31:35.782 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring embedded WebApplicationContext
+17:31:35.783 INFO  springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext()/296 - Root WebApplicationContext: initialization completed in 1769 ms
+17:31:36.138 INFO  zaxxer.hikari.HikariDataSource.getConnection()/110 - HikariPool-1 - Starting...
+17:31:36.886 INFO  zaxxer.hikari.HikariDataSource.getConnection()/123 - HikariPool-1 - Start completed.
+17:31:37.268 INFO  springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize()/171 - Initializing ExecutorService 'applicationTaskExecutor'
+17:31:37.467 INFO  springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping.<init>()/61 - Adding welcome page template: index
+17:31:37.683 INFO  springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer()/57 - LiveReload server is running on port 35729
+17:31:37.719 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Starting ProtocolHandler ["http-nio-80"]
+17:31:37.753 INFO  springframework.boot.web.embedded.tomcat.TomcatWebServer.start()/204 - Tomcat started on port(s): 80 (http) with context path '/GBathCenter'
+17:31:37.757 INFO  springframework.boot.StartupInfoLogger.logStarted()/59 - Started GBathCenterApplication in 4.315 seconds (JVM running for 5.496)
+17:31:44.146 INFO  apache.juli.logging.DirectJDKLog.log()/173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:31:44.146 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/524 - Initializing Servlet 'dispatcherServlet'
+17:31:44.153 INFO  springframework.web.servlet.FrameworkServlet.initServletBean()/546 - Completed initialization in 7 ms

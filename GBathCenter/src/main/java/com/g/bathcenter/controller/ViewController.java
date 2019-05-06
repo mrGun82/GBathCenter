@@ -45,5 +45,9 @@ public class ViewController {
 		ModelAndView mav = new ModelAndView("statistics/statistic");
 		return mav;
 	}
-	
+	@RequestMapping("user/list")
+	public ModelAndView userList() {
+		ModelAndView mav = new ModelAndView("user/list");
+		return mav;
+	}
 }
