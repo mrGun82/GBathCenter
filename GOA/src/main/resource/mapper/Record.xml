@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.record">
+	<update id="create">
+		CREATE TABLE RECORD(ID BIGINT NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1) PRIMARY KEY,
+		TITLE VARCHAR(64),TYPE VARCHAR(32),DATE VARCHAR(22) ,CONTENT VARCHAR(2048))
+	</update>
+	
+	<insert id="insert" parameterType="g.oa.bean.Record">
+		INSERT INTO RECORD(TITLE,TYPE,DATE,CONTENT) VALUES (#{title,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, #{date}, #{content,jdbcType=VARCHAR})
+	</insert>
+	<delete id="delete" parameterType="g.oa.bean.Record">
+		DELETE FROM RECORD WHERE ID =#{id}
+	</delete>
+	<update id="update" parameterType="g.oa.bean.Record">
+		UPDATE RECORD SET TITLE = #{title,jdbcType=VARCHAR}, TYPE = #{type,jdbcType=VARCHAR} , CONTENT = #{content,jdbcType=VARCHAR} WHERE ID = #{id}
+	</update>
+	<select id="select" resultType="g.oa.bean.Record" parameterType="g.oa.bean.Record">
+		SELECT ID,TITLE,TYPE,DATE,CONTENT FROM RECORD 
+		<where>
+			<if test="title!=null and title!=''">
+				TITLE like '%'||#{title}||'%'
+			</if>
+			<if test="type!=null and type!=''">
+				AND TYPE like '%'||#{type}||'%'
+			</if>
+			<if test="content!=null and content!=''">
+				AND CONTENT like '%'||#{content}||'%'
+			</if>
+			<if test="fromDate!=null and fromDate!=''">
+				AND date>=CAST(#{fromDate}||'000000' AS VARCHAR(22))
+			</if>
+			<if test="toDate!=null and toDate!=''">
+				AND date<![CDATA[<]]>=CAST(#{toDate}||'999999' AS VARCHAR(22))
+			</if>
+		</where>
+		ORDER BY DATE DESC
+	</select>
+</mapper>  

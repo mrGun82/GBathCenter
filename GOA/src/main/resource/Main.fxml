@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="g.oa.controller.RecordController">
+  <children>
+    <BorderPane fx:id="borderPane" layoutX="0.0" layoutY="0.0" prefHeight="600.0" prefWidth="810.0">
+      <bottom>
+        <VBox prefHeight="200.0" prefWidth="100.0" style="">
+          <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="21.9998779296875" prefWidth="800.0">
+              <children>
+                <Label text="标题 " />
+                <TextField fx:id="title" prefWidth="240.0">
+                  <HBox.margin>
+                    <Insets right="5.0" />
+                  </HBox.margin>
+                </TextField>
+                <Label text="类型 " />
+                <ComboBox fx:id="type" editable="true" prefWidth="100.0" promptText="">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="项 1" />
+                      <String fx:value="项 2" />
+                      <String fx:value="项 3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <TextField fx:id="id" prefWidth="140.0" visible="false" />
+              </children>
+              <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+              </padding>
+            </HBox>
+            <TextArea fx:id="content" prefHeight="142.0" prefWidth="800.0" wrapText="true" />
+            <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="800.0">
+              <children>
+                <Button mnemonicParsing="false" onAction="#save" text="保存">
+                  <HBox.margin>
+                    <Insets left="5.0" right="5.0" />
+                  </HBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#resetInfo" text="新建">
+                  <HBox.margin>
+                    <Insets left="5.0" right="5.0" />
+                  </HBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#remove" text="删除">
+                  <HBox.margin>
+                    <Insets left="5.0" right="5.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+              <padding>
+                <Insets top="10.0" />
+              </padding>
+            </HBox>
+          </children>
+        </VBox>
+      </bottom>
+      <center>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+          <children>
+            <Pagination fx:id="pagination" prefHeight="300.0" prefWidth="790.0" />
+            <TableView fx:id="tvRecord" prefHeight="300.0" prefWidth="790.0">
+              <columns>
+                <TableColumn visible="false" fx:id="tcId" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="120.0" text="标题" fx:id="tcTitle" />
+                <TableColumn maxWidth="5000.0" minWidth="84.0" prefWidth="84.0" text="类型" fx:id="tcType" />
+                <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="140.0" text="日期" fx:id="tcDate" />
+                <TableColumn minWidth="440.0" text="内容" fx:id="tcContent" />
+              </columns>
+            </TableView>
+          </children>
+        </VBox>
+      </center>
+      <top>
+        <VBox prefHeight="49.0" prefWidth="800.0">
+          <children>
+            <MenuBar prefWidth="786.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="文件">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="导入" />
+                    <MenuItem mnemonicParsing="false" text="导出" />
+                    <MenuItem fx:id="exit" mnemonicParsing="false" text="退出" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="编辑">
+                  <items>
+                    <MenuItem fx:id="cache" mnemonicParsing="false" text="类型" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="帮助">
+                  <items>
+                    <MenuItem fx:id="about" mnemonicParsing="false" text="关于" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <HBox id="top" fx:id="topHBox" alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="781.0">
+              <children>
+                <Label text="日期 " />
+                <DatePicker fx:id="searchDateFrom" prefWidth="110.0" />
+                <Label text=" ~ " />
+                <DatePicker fx:id="searchDateTo" prefWidth="110.0" />
+                <Label text="标题 ">
+                  <HBox.margin>
+                    <Insets left="10.0" />
+                  </HBox.margin>
+                </Label>
+                <TextField fx:id="searchTitle" prefWidth="120.0" />
+                <Label text="内容 ">
+                  <HBox.margin>
+                    <Insets left="5.0" />
+                  </HBox.margin>
+                </Label>
+                <TextField fx:id="searchContent" prefWidth="120.0" text="">
+                  <HBox.margin>
+                    <Insets right="5.0" />
+                  </HBox.margin>
+                </TextField>
+                <Label text="类型 " />
+                <ComboBox fx:id="searchType" editable="true" prefWidth="110.0" promptText="">
+                  <items>
+                    <FXCollections fx:factory="observableArrayList">
+                      <String fx:value="项 1" />
+                      <String fx:value="项 2" />
+                      <String fx:value="项 3" />
+                    </FXCollections>
+                  </items>
+                </ComboBox>
+                <Button fx:id="search" mnemonicParsing="false" onAction="#search" text="搜索">
+                  <HBox.margin>
+                    <Insets left="5.0" right="5.0" />
+                  </HBox.margin>
+                </Button>
+              </children>
+              <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+              </padding>
+            </HBox>
+          </children>
+        </VBox>
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>

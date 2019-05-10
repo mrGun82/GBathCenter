@@ -1,0 +1,56 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.root{
+
+    -fx-font-size: 12px;
+    -fx-font-family: "Helvetica, Arial, sans-serif";
+
+}
+.color1{
+	#004b68
+}
+.color2{
+	#41cdb3
+}
+.color3{
+	#ffeb95
+}
+.color4{
+	#ff7d5d
+}
+.color5{
+	#c60151
+}
+.button{
+	-fx-padding:5 20 5 20;
+    -fx-font-size: 12px;
+    -jfx-button-type: RAISED;
+    -fx-background-color: #004b68;
+    -fx-text-fill: WHITE;
+}
+.button:hover{
+	-fx-background-color: #1a637f;
+}
+.button:focused{
+	-fx-background-color: #01719c;
+}
+.button:pressed{
+	-fx-background-color: #01719c;
+}
+.button:disabled{
+	-fx-background-color: gray;
+}
+.check-box{
+    -jfx-checked-color: RED;
+    -jfx-unchecked-color: BLACK;
+}
+.jfx-hamburger-icon{
+    -fx-spacing: 5;
+    -fx-cursor: hand;
+}
+.jfx-hamburger-icon StackPane{
+    -fx-pref-width: 40px;
+    -fx-pref-height: 7px;
+    -fx-background-color : #D63333;
+    -fx-background-radius : 5px;
+}
