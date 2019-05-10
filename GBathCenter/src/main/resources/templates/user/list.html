@@ -1,0 +1,214 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no  user-scalable=0">
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" type="text/css">
+<link rel="shortcut icon" th:href="@{/favicon.ico}" />
+<style type="text/css">
+td {
+	vertical-align: middle !important;
+}
+</style>
+<script type="text/javascript" th:src="@{/js/base.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery-3.4.0.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/bootstrap.bundle.js}"></script>
+<script type="text/javascript" th:src="@{/js/table.js}"></script>
+<script type="text/javascript" th:src="@{/js/user/list.js}"></script>
+<title>BATH CENTER</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row" style="clear: right">
+			<div class="table-responsive" style="height: 451px;">
+				<table id="table" class="table table-sm table-striped table-bordered table-hover">
+					<thead class="thead-light">
+						<tr>
+							<th scope="col" valign="middle">账号</th>
+							<th scope="col" valign="middle">权限</th>
+							<th scope="col" valign="middle">操作<button id="newUserBtn" type="button" class="btn btn-sm btn-primary float-right" style="position:absolute;right:1px;top:2px;">✚</button></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>admin</td>
+							<td>全部</td>
+							<td width="135" nowrap="nowrap" align="center" style="white-space: nowrap">
+								<button id="newUserBtn" type="button" class="btn btn-sm btn-primary">重置密码</button>
+								<button id="newUserBtn" type="button" class="btn btn-sm btn-primary">删除</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<nav id="pager" class="mx-auto"></nav>
+		</div>
+	</div>
+	<div id="userInfo" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">客户详情</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="infoCustomerForm" action="">
+					<input id="infoId" type="hidden">
+					<table class="mx-auto">
+						<tr>
+							<td width="50%"><input id="infoName" tabindex="1" type="text" class="form-control modifInfo" placeholder="姓名" disabled="disabled"></td>
+							<td rowspan="6" valign="top">
+								<div class="card" style="background-color:#fff;top:0">
+									<div class="card-header">
+										本次消费项目
+									</div>
+									<div class="card-body" style="height:190px;overflow:auto;">
+										<div class="list-group">
+										  <a class="list-group-item list-group-item-action" style="cursor:pointer" th:each="item:${application.appCodes.C1000000.codeSets}">
+										  	<input type="checkbox" class="infoExpenseType" th:value="${item.id }" th:attr="price=${item.value },names=${item.name }" th:text="'&nbsp;&nbsp;'+${item.name }+'(￥'+${item.value }+')'" />
+										  </a>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><select id="infoGender" tabindex="2" class="form-control modifInfo" disabled="disabled">
+									<option value="1">男</option>
+									<option value="0">女</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td>
+								<input id="infoPhoneNumber" tabindex="3" type='tel' class="form-control modifInfo" placeholder="手机号码" pattern="\d*" disabled="disabled">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<select id="infoLevel" tabindex="4" class="form-control modifInfo" data-toggle="tooltip" data-placement="right" title="客户级别" disabled="disabled">
+									<option value="0">普通</option>
+									<option value="1">VIP</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input id="infoRecharge" tabindex="5"  type='number' class="form-control" placeholder="充值金额" pattern="\d*" data-toggle="tooltip" data-placement="right" title="充值金额">
+							</td>
+						</tr>
+						<tr id="consumptionItem" style="visibility: hidden1">
+							<td><input id="infoExpense" tabindex="6" class="form-control" type="number" pattern="\d*" placeholder="本次消费"></td>
+						</tr>
+					</table>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<span class="badge badge-warning" style="padding:13px;position:absolute;left:15px;">余额：￥<span id="balance">0</span></span>
+					<button id="hideInfoBtn" type="button" class="btn btn-secondary">关闭</button>
+					<button id="modifInfoBtn" type="button" class="btn btn-primary">修改</button>
+					<button id="updateInfoBtn" type="button" class="btn btn-primary">保存</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="newCustomer" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">新客户</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="" id="newCustomerForm">
+					<table class="mx-auto">
+						<tr>
+							<td width="50%"><input tabindex="1" type="text" class="form-control" id="newName" placeholder="姓名"></td>
+							<td rowspan="6" valign="top">
+								<div class="card" style="width:220px;background-color:#fff;top:0">
+									<div class="card-header">
+										本次消费项目
+									</div>
+									<div class="card-body" style="height:190px;overflow:auto;">
+										<div class="list-group">
+										  <a class="list-group-item list-group-item-action" style="cursor:pointer" th:each="item:${application.appCodes.C1000000.codeSets}">
+										  	<input type="checkbox" class="newExpenseType" th:value="${item.id }" th:attr="price=${item.value },names=${item.name }" th:text="'&nbsp;&nbsp;'+${item.name }+'(￥'+${item.value }+')'" />
+										  </a>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><select tabindex="2" id="newGender" class="form-control">
+									<option value="1">男</option>
+									<option value="0">女</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td>
+								<input tabindex="3" type='tel' class="form-control" id="newPhoneNumber" placeholder="手机号码" pattern="\d*">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<select tabindex="4" id="newLevel" class="form-control" data-toggle="tooltip" data-placement="right" title="客户级别">
+									<option value="0">普通</option>
+									<option value="1">VIP</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input tabindex="5" id="newRecharge"  type='number' class="form-control" placeholder="充值金额" pattern="\d*" data-toggle="tooltip" data-placement="right" title="充值金额">
+							</td>
+						</tr>
+						<tr id="consumptionItem" style="visibility: hidden1">
+							<td><input tabindex="6" id="newExpense" class="form-control" type="number" pattern="\d*" placeholder="本次消费"></td>
+						</tr>
+					</table>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button id="hideNewBtn" type="button" class="btn btn-secondary">关闭</button>
+					<button id="saveBtn" type="button" class="btn btn-primary">保存</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="historyModal" class="modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">历史记录</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<input id="histCustomerId" type="hidden">
+					<ul class="nav nav-tabs" role="tablist">
+					  <li class="nav-item">
+					    <a class="hisTabLink nav-link active" data-toggle="tab" th:href="@{/customer/historyRecharge}" target="histFrame" role="tab" aria-controls="home" aria-selected="true">充值记录</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="hisTabLink nav-link" data-toggle="tab" th:href="@{/customer/historyExpense}" target="histFrame" role="tab" aria-controls="profile" aria-selected="false">消费记录</a>
+					  </li>
+					</ul>
+					<iframe id="histFram" width="100%" height="368" frameborder="0" name="histFrame"></iframe>
+				</div>
+				<div class="modal-footer">
+					<button id="hideHistoryBtn" type="button" class="btn btn-secondary">关闭</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
